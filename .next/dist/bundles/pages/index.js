@@ -67,34 +67,163 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
 
-/***/ "./pages/Leftbar.js":
+module.exports = require("react");
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+module.exports = require("babel-runtime/regenerator");
+
+/***/ }),
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("babel-runtime/regenerator");
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_list_MultiDataList__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/list/MultiDataList");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_list_MultiDataList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_list_MultiDataList__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_range_RangeSlider__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/range/RangeSlider");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_range_RangeSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_range_RangeSlider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_date_DateRange__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/date/DateRange");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_date_DateRange___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_date_DateRange__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__appbaseio_reactivesearch_lib_components_list_MultiList__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/list/MultiList");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__appbaseio_reactivesearch_lib_components_list_MultiList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__appbaseio_reactivesearch_lib_components_list_MultiList__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__appbaseio_reactivesearch_lib_components_range_SingleRange__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/range/SingleRange");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__appbaseio_reactivesearch_lib_components_range_SingleRange___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__appbaseio_reactivesearch_lib_components_range_SingleRange__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch__);
 
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _jsxFileName = "/Users/jimmydang/Projects/MovieSearch/pages/Leftbar.js";
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var components = {
+  dataSearch: {
+    componentId: "mainSearch",
+    dataField: "original_title.search",
+    categoryField: "title",
+    className: "search-bar",
+    queryFormat: "and",
+    placeholder: "Search for movies...",
+    iconPosition: "left",
+    autosuggest: false,
+    filterLabel: "search",
+    highlight: true
+  }
+};
+
+var Navbar = function (_Component) {
+  _inherits(Navbar, _Component);
+
+  function Navbar() {
+    _classCallCheck(this, Navbar);
+
+    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+  }
+
+  _createClass(Navbar, [{
+    key: "render",
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        "div",
+        { className: "navbar" },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          "div",
+          { className: "logo-container" },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("img", { className: "app-logo", src: "/static/logo.jpg", alt: "MovieSearch" })
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          "div",
+          { className: "search-container" },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch___default.a, components.dataSearch)
+        )
+      );
+    }
+  }], [{
+    key: "getInitialProps",
+    value: function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return initReactivesearch([_extends({}, components.datasearch, {
+                  type: "DataSearch",
+                  source: __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch___default.a
+                })], null);
+
+              case 2:
+                _context.t0 = _context.sent;
+                return _context.abrupt("return", {
+                  store: _context.t0
+                });
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function getInitialProps() {
+        return _ref.apply(this, arguments);
+      }
+
+      return getInitialProps;
+    }()
+  }]);
+
+  return Navbar;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Navbar);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("@appbaseio/reactivesearch/lib/components/search/DataSearch");
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_list_MultiDataList__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_list_MultiDataList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_list_MultiDataList__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_range_RangeSlider__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_range_RangeSlider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_range_RangeSlider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_date_DateRange__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_date_DateRange___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_date_DateRange__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__appbaseio_reactivesearch_lib_components_list_MultiList__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__appbaseio_reactivesearch_lib_components_list_MultiList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__appbaseio_reactivesearch_lib_components_list_MultiList__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__appbaseio_reactivesearch_lib_components_range_SingleRange__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__appbaseio_reactivesearch_lib_components_range_SingleRange___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__appbaseio_reactivesearch_lib_components_range_SingleRange__);
+
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -253,184 +382,74 @@ var Leftbar = function (_Component) {
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
         "div",
-        { className: this.props.isClicked ? "left-bar-optional" : "left-bar", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 214
-          }
-        },
+        { className: this.props.isClicked ? "left-bar-optional" : "left-bar" },
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           "div",
-          { className: "filter-heading center", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 215
-            }
-          },
+          { className: "filter-heading center" },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             "b",
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 216
-              }
-            },
+            null,
             " ",
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-pied-piper-alt", __source: {
-                fileName: _jsxFileName,
-                lineNumber: 218
-              }
-            }),
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-pied-piper-alt" }),
             " Genres",
             " "
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__appbaseio_reactivesearch_lib_components_list_MultiList___default.a, _extends({}, components.multiList, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 222
-          }
-        })),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", { className: "blue", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 224
-          }
-        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__appbaseio_reactivesearch_lib_components_list_MultiList___default.a, components.multiList),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", { className: "blue" }),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           "div",
-          { className: "filter-heading center", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 225
-            }
-          },
+          { className: "filter-heading center" },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             "b",
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 226
-              }
-            },
+            null,
             " ",
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-dollar", __source: {
-                fileName: _jsxFileName,
-                lineNumber: 228
-              }
-            }),
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-dollar" }),
             " Revenue",
             " "
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__appbaseio_reactivesearch_lib_components_range_SingleRange___default.a, _extends({}, components.singleRange, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 232
-          }
-        })),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", { className: "blue", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 233
-          }
-        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__appbaseio_reactivesearch_lib_components_range_SingleRange___default.a, components.singleRange),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", { className: "blue" }),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           "div",
-          { className: "filter-heading center", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 235
-            }
-          },
+          { className: "filter-heading center" },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             "b",
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 236
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-star", __source: {
-                fileName: _jsxFileName,
-                lineNumber: 237
-              }
-            }),
+            null,
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-star" }),
             " Ratings"
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_range_RangeSlider___default.a, _extends({}, components.rangeSlider, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 241
-          }
-        })),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", { className: "blue", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 243
-          }
-        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_range_RangeSlider___default.a, components.rangeSlider),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", { className: "blue" }),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           "div",
-          { className: "filter-heading center", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 244
-            }
-          },
+          { className: "filter-heading center" },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             "b",
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 245
-              }
-            },
+            null,
             " ",
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-language", __source: {
-                fileName: _jsxFileName,
-                lineNumber: 247
-              }
-            }),
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-language" }),
             " Languages",
             " "
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_list_MultiDataList___default.a, _extends({}, components.multiDataList, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 251
-          }
-        })),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", { className: "blue", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 253
-          }
-        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_list_MultiDataList___default.a, components.multiDataList),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", { className: "blue" }),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           "div",
-          { className: "filter-heading center", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 255
-            }
-          },
+          { className: "filter-heading center" },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             "b",
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 256
-              }
-            },
+            null,
             " ",
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-calendar", __source: {
-                fileName: _jsxFileName,
-                lineNumber: 258
-              }
-            }),
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-calendar" }),
             " Release Date",
             " "
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_date_DateRange___default.a, _extends({}, components.dateRange, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 262
-          }
-        }))
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_date_DateRange___default.a, components.dateRange)
       );
     }
   }], [{
@@ -484,181 +503,76 @@ var Leftbar = function (_Component) {
   return Leftbar;
 }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Leftbar);
+/* harmony default export */ __webpack_exports__["default"] = (Leftbar);
 
 /***/ }),
-
-/***/ "./pages/Navbar.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("babel-runtime/regenerator");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/search/DataSearch");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch__);
-
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _jsxFileName = "/Users/jimmydang/Projects/MovieSearch/pages/Navbar.js";
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var components = {
-  dataSearch: {
-    componentId: "mainSearch",
-    dataField: "original_title.search",
-    categoryField: "title",
-    className: "search-bar",
-    queryFormat: "and",
-    placeholder: "Search for movies...",
-    iconPosition: "left",
-    autosuggest: false,
-    filterLabel: "search",
-    highlight: true
-  }
-};
-
-var Navbar = function (_Component) {
-  _inherits(Navbar, _Component);
-
-  function Navbar() {
-    _classCallCheck(this, Navbar);
-
-    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
-  }
-
-  _createClass(Navbar, [{
-    key: "render",
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        "div",
-        { className: "navbar", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 36
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          "div",
-          { className: "logo-container", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 37
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("img", { className: "app-logo", src: "/static/logo.jpg", alt: "MovieSearch", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 38
-            }
-          })
-        ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          "div",
-          { className: "search-container", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 41
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch___default.a, _extends({}, components.dataSearch, {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 42
-            }
-          }))
-        )
-      );
-    }
-  }], [{
-    key: "getInitialProps",
-    value: function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return initReactivesearch([_extends({}, components.datasearch, {
-                  type: "DataSearch",
-                  source: __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_search_DataSearch___default.a
-                })], null);
-
-              case 2:
-                _context.t0 = _context.sent;
-                return _context.abrupt("return", {
-                  store: _context.t0
-                });
-
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee, this);
-      }));
-
-      function getInitialProps() {
-        return _ref.apply(this, arguments);
-      }
-
-      return getInitialProps;
-    }()
-  }]);
-
-  return Navbar;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Navbar);
-
-/***/ }),
-
-/***/ "./pages/index.css":
+/* 5 */
 /***/ (function(module, exports) {
 
+module.exports = require("@appbaseio/reactivesearch/lib/components/list/MultiDataList");
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("@appbaseio/reactivesearch/lib/components/range/RangeSlider");
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = require("@appbaseio/reactivesearch/lib/components/date/DateRange");
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("@appbaseio/reactivesearch/lib/components/list/MultiList");
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = require("@appbaseio/reactivesearch/lib/components/range/SingleRange");
+
+/***/ }),
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(15);
 
 
 /***/ }),
-
-/***/ "./pages/index.js":
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("babel-runtime/regenerator");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_basic_ReactiveBase__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/basic/ReactiveBase");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_basic_ReactiveBase__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_basic_ReactiveBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_basic_ReactiveBase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_basic_SelectedFilters__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/basic/SelectedFilters");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_basic_SelectedFilters__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_basic_SelectedFilters___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_basic_SelectedFilters__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_result_ResultCard__ = __webpack_require__("@appbaseio/reactivesearch/lib/components/result/ResultCard");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_result_ResultCard__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_result_ResultCard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_result_ResultCard__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Navbar_js__ = __webpack_require__("./pages/Navbar.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Leftbar_js__ = __webpack_require__("./pages/Leftbar.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__appbaseio_reactivesearch_lib_server__ = __webpack_require__("@appbaseio/reactivesearch/lib/server");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Navbar_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Leftbar_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__appbaseio_reactivesearch_lib_server__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__appbaseio_reactivesearch_lib_server___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__appbaseio_reactivesearch_lib_server__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__index_css__ = __webpack_require__("./pages/index.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__index_css__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__index_css__);
 
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jsxFileName = "/Users/jimmydang/Projects/MovieSearch/pages/index.js";
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
@@ -736,104 +650,51 @@ var components = {
       return {
         description: __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           "div",
-          { className: "main-description", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 81
-            }
-          },
+          { className: "main-description" },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             "div",
-            { className: "ih-item square effect6 top_to_bottom", __source: {
-                fileName: _jsxFileName,
-                lineNumber: 82
-              }
-            },
+            { className: "ih-item square effect6 top_to_bottom" },
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               "a",
-              { target: "#", href: "http://www.imdb.com/title/" + res.imdb_id, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 83
-                }
-              },
+              { target: "#", href: "http://www.imdb.com/title/" + res.imdb_id },
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                 "div",
-                { className: "img", __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 84
-                  }
-                },
+                { className: "img" },
                 __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("img", {
                   src: "https://image.tmdb.org/t/p/w500" + res.poster_path,
                   alt: res.original_title,
-                  className: "result-image",
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 85
-                  }
+                  className: "result-image"
                 })
               ),
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                 "div",
-                { className: "info colored", __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 91
-                  }
-                },
+                { className: "info colored" },
                 __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                   "h3",
-                  { className: "overlay-title", __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 92
-                    }
-                  },
+                  { className: "overlay-title" },
                   res.original_title
                 ),
                 __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                   "div",
-                  { className: "overlay-description", __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 94
-                    }
-                  },
+                  { className: "overlay-description" },
                   res.tagline
                 ),
                 __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                   "div",
-                  { className: "overlay-info", __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 96
-                    }
-                  },
+                  { className: "overlay-info" },
                   __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                     "div",
-                    { className: "rating-time-score-container", __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 97
-                      }
-                    },
+                    { className: "rating-time-score-container" },
                     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                       "div",
-                      { className: "sub-title Rating-data", __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 98
-                        }
-                      },
+                      { className: "sub-title Rating-data" },
                       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                         "b",
-                        {
-                          __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 99
-                          }
-                        },
+                        null,
                         "Imdb",
                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                           "span",
-                          { className: "details", __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 101
-                            }
-                          },
+                          { className: "details" },
                           " ",
                           res.vote_average,
                           "/10 "
@@ -842,68 +703,34 @@ var components = {
                     ),
                     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                       "div",
-                      { className: "time-data", __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 104
-                        }
-                      },
+                      { className: "time-data" },
                       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                         "b",
-                        {
-                          __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 105
-                          }
-                        },
+                        null,
                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                           "span",
-                          { className: "time", __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 106
-                            }
-                          },
-                          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-clock-o", __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 107
-                            }
-                          }),
+                          { className: "time" },
+                          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", { className: "fa fa-clock-o" }),
                           " "
                         ),
                         " ",
                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                           "span",
-                          { className: "details", __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 109
-                            }
-                          },
+                          { className: "details" },
                           res.time_str
                         )
                       )
                     ),
                     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                       "div",
-                      { className: "sub-title Score-data", __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 112
-                        }
-                      },
+                      { className: "sub-title Score-data" },
                       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                         "b",
-                        {
-                          __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 113
-                          }
-                        },
+                        null,
                         "Score:",
                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                           "span",
-                          { className: "details", __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 115
-                            }
-                          },
+                          { className: "details" },
                           " ",
                           res.score
                         )
@@ -912,44 +739,22 @@ var components = {
                   ),
                   __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                     "div",
-                    { className: "revenue-lang-container", __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 119
-                      }
-                    },
+                    { className: "revenue-lang-container" },
                     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                       "div",
-                      { className: "revenue-data", __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 120
-                        }
-                      },
+                      { className: "revenue-data" },
                       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                         "b",
-                        {
-                          __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 121
-                          }
-                        },
+                        null,
                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                           "span",
-                          {
-                            __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 122
-                            }
-                          },
+                          null,
                           "Revenue:"
                         ),
                         " ",
                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                           "span",
-                          { className: "details", __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 123
-                            }
-                          },
+                          { className: "details" },
                           " $",
                           res.or_revenue
                         ),
@@ -958,27 +763,14 @@ var components = {
                     ),
                     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                       "div",
-                      { className: "sub-title language-data", __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 127
-                        }
-                      },
+                      { className: "sub-title language-data" },
                       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                         "b",
-                        {
-                          __source: {
-                            fileName: _jsxFileName,
-                            lineNumber: 128
-                          }
-                        },
+                        null,
                         "Language:",
                         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                           "span",
-                          { className: "details", __source: {
-                              fileName: _jsxFileName,
-                              lineNumber: 130
-                            }
-                          },
+                          { className: "details" },
                           " ",
                           res.original_language
                         )
@@ -1033,67 +825,28 @@ var Main = function (_Component) {
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
         "div",
-        { className: "main-container", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 197
-          }
-        },
+        { className: "main-container" },
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_2__appbaseio_reactivesearch_lib_components_basic_ReactiveBase___default.a,
-          _extends({}, components.settings, { initialState: this.props.store, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 198
-            }
-          }),
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Navbar_js__["a" /* default */], {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 199
-            }
-          }),
+          _extends({}, components.settings, { initialState: this.props.store }),
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Navbar_js__["default"], null),
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             "div",
-            { className: "sub-container", __source: {
-                fileName: _jsxFileName,
-                lineNumber: 201
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Leftbar_js__["a" /* default */], { isClicked: this.state.isClicked, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 202
-              }
-            }),
+            { className: "sub-container" },
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Leftbar_js__["default"], { isClicked: this.state.isClicked }),
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               "div",
               {
-                className: this.state.isClicked ? "result-container-optional" : "result-container",
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 204
-                }
+                className: this.state.isClicked ? "result-container-optional" : "result-container"
               },
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_basic_SelectedFilters___default.a, _extends({}, components.selectedFilters, {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 211
-                }
-              })),
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_result_ResultCard___default.a, _extends({}, components.resultCard, {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 213
-                }
-              }))
+              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__appbaseio_reactivesearch_lib_components_basic_SelectedFilters___default.a, components.selectedFilters),
+              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__appbaseio_reactivesearch_lib_components_result_ResultCard___default.a, components.resultCard)
             ),
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               "button",
               {
                 className: "toggle-button",
-                onClick: this.handleClick.bind(this),
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 216
-                }
+                onClick: this.handleClick.bind(this)
               },
               this.state.message
             )
@@ -1146,98 +899,34 @@ var Main = function (_Component) {
 /* harmony default export */ __webpack_exports__["default"] = (Main);
 
 /***/ }),
-
-/***/ 2:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./pages/index.js");
-
-
-/***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/basic/ReactiveBase":
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = require("@appbaseio/reactivesearch/lib/components/basic/ReactiveBase");
 
 /***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/basic/SelectedFilters":
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = require("@appbaseio/reactivesearch/lib/components/basic/SelectedFilters");
 
 /***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/date/DateRange":
-/***/ (function(module, exports) {
-
-module.exports = require("@appbaseio/reactivesearch/lib/components/date/DateRange");
-
-/***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/list/MultiDataList":
-/***/ (function(module, exports) {
-
-module.exports = require("@appbaseio/reactivesearch/lib/components/list/MultiDataList");
-
-/***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/list/MultiList":
-/***/ (function(module, exports) {
-
-module.exports = require("@appbaseio/reactivesearch/lib/components/list/MultiList");
-
-/***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/range/RangeSlider":
-/***/ (function(module, exports) {
-
-module.exports = require("@appbaseio/reactivesearch/lib/components/range/RangeSlider");
-
-/***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/range/SingleRange":
-/***/ (function(module, exports) {
-
-module.exports = require("@appbaseio/reactivesearch/lib/components/range/SingleRange");
-
-/***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/result/ResultCard":
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("@appbaseio/reactivesearch/lib/components/result/ResultCard");
 
 /***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/components/search/DataSearch":
-/***/ (function(module, exports) {
-
-module.exports = require("@appbaseio/reactivesearch/lib/components/search/DataSearch");
-
-/***/ }),
-
-/***/ "@appbaseio/reactivesearch/lib/server":
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = require("@appbaseio/reactivesearch/lib/server");
 
 /***/ }),
-
-/***/ "babel-runtime/regenerator":
+/* 20 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-runtime/regenerator");
 
-/***/ }),
-
-/***/ "react":
-/***/ (function(module, exports) {
-
-module.exports = require("react");
 
 /***/ })
-
-/******/ });
-//# sourceMappingURL=index.js.map
+/******/ ]);
